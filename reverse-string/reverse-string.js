@@ -1,17 +1,5 @@
-var ReverseString = function () {};
-
-ReverseString.prototype.reverseString = function (str) {
-
-  if (reverseString = '') {
-    return '';
-  }
-
-    else {
-      var splitString = str.split("");
-      var reverseArray = splitString.reverse();
-      var joinArray = reverseArray.join("");
-      return joinArray;
-    }
+const ReverseString = function (str) {
+  return str.split('').reverse().join('');
 };
 
 module.exports = ReverseString;
