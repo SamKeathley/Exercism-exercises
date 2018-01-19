@@ -3,9 +3,7 @@ class Gigasecond {
     this.input = input;
   }
   date(){
-    const seconds = this.input.getTime() / 1000;
-
-    return new Date((seconds + 1000000000) * 1000)
+    return new Date(this.input.getTime() + 10**12)
   }
 };
 
